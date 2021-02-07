@@ -1,0 +1,23 @@
+{
+  "packageName": "Philips Hue CLIP Sensors",
+  "author": "Simon Burke",
+  "version": "1.0",
+  "minimumHEVersion": "2.1.9",
+  "dateReleased": "2021-02-07",
+  "drivers": [
+    {
+      "id": "ac365bd8-a8bf-4adf-b69d-fca887ef1992",
+      "name": "Hue Bridge CLIP Sensor Switch",
+      "namespace": "simnet",
+      "location": "https://raw.githubusercontent.com/sburke781/hubitat/MEL_PackageManagerSetup/PhilipsHue/HueBridgeCLIPSensorSwitch_driver.groovy",
+      "required": true
+    },
+    {
+      "id": "cb25e413-8a45-4978-91bb-297bde5a9a6a",
+      "name": "Hue Bridge CLIP Sensor Temperature",
+      "namespace": "simnet",
+      "location": "https://raw.githubusercontent.com/sburke781/hubitat/MEL_PackageManagerSetup/PhilipsHue/HueBridgeCLIPSensorTemperature_driver.groovy",
+      "required": true
+    }
+  ]
+}
