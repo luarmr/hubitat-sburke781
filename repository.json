@@ -14,6 +14,12 @@
 			"category": "Integrations",
 			"location": "https://raw.githubusercontent.com/sburke781/hubitat/master/SensorPush/packageManifest.json",
 			"description": "Device driver for reading current SensorPush Temperature readings from cloud storage into virtual temperature sensor device on Hubitat hub"
+		},
+		{
+			"name": "Philips Hue CLIP Sensor",
+			"category": "Integrations",
+			"location": "https://raw.githubusercontent.com/sburke781/hubitat/master/PhilipsHue/packageManifest.json",
+			"description": "Device driver for integrating Philips Hue CLIP sensors from Philips Hue Bridge and reading temperature readings from Philips Hue motion Sensors"
 		}
 	]
 }
