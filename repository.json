@@ -1,0 +1,13 @@
+{
+	"author": "Simon Burke",
+	"gitHubUrl": "https://github.com/sburke781",
+	"payPalUrl": "",
+	"packages": [
+		{
+			"name": "Mitsubishi Electric Thermostat",
+			"category": "Integrations",
+			"location": "https://raw.githubusercontent.com/sburke781/hubitat/master/MelUnifiedThermostat/packageManifest.json",
+			"description": "Unified set of drivers for Mitsubishi Air Conditioners (Thermostats), including those linked to the MELCloud service in Europe, MELView service in Australia and New Zealand, as well as the KUMO Cloud service in the USA."
+		}
+	]
+}
