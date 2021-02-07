@@ -1,0 +1,16 @@
+{
+  "packageName": "SensorPush Gateway",
+  "author": "Simon Burke",
+  "version": "1.0",
+  "minimumHEVersion": "2.1.9",
+  "dateReleased": "2021-02-07",
+  "drivers": [
+    {
+      "id": "b2b9ece2-f392-4828-a188-535719d20192",
+      "name": "SensorPush Gateway",
+      "namespace": "simnet",
+      "location": "https://raw.githubusercontent.com/sburke781/hubitat/MEL_PackageManagerSetup/SensorPush/SensorPushGateway_driver.groovy",
+      "required": true
+    }
+  ]
+}
