@@ -55,60 +55,6 @@ def initialize() {
     if ("${UserName}" != "" && "${Password}" != "" && "${BaseURL}" != "") { refresh() }
 }
 
-/*
-def createChildACUnits() {
-    //retrieves current status information for the ac unit
-    
-    def vUnitId = ""
-    def vRoom = ""
-    
-    def bodyJson = "{ }"
-    def headers = [:] 
-
-    headers.put("Content-Type", "application/json; charset=UTF-8")
-    headers.put("Accept", "application/json, text/javascript, */*; q=0.01")
-    headers.put("Referer", "${BaseURL}/")
-    headers.put("X-Requested-With","XMLHttpRequest")
-    headers.put("User-Agent","Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36")
-    headers.put("X-MitsContextKey","${state.authCode}")
-    
-    def getParams = [
-        uri: "${BaseURL}/Mitsubishi.Wifi.Client/User/ListDevices",
-        headers: headers,
-        contentType: "application/json; charset=UTF-8",
-        body : bodyJson
-	]
-    debugLog("createChildACUnits: Body = ${bodyJson}, Headers = ${headers}")       
-	try {
-        
-        httpGet(getParams) { resp -> 
-            //debugLog("createChildACUnits: Initial data returned from ListDevices: ${resp.data}") 
-            
-            resp?.data?.Structure?.Devices?.each { acUnit -> // Each Device
-                                 
-                                      vRoom     = "${acUnit.DeviceName}".replace("[","").replace("]","")
-                                      vUnitId   = "${acUnit.DeviceID}".replace("[","").replace("]","")
-                                      debugLog("createChildACUnits: ${vUnitId}, ${vRoom}")
-                                      
-                                      def childDevice = findChildDevice("${vUnitId}", "AC")
-                                      if (childDevide == null) {
-                                          createChildDevice("${vUnitId}", "${vRoom}", "AC")
-                                          childDevice = findChildDevice("${vUnitId}", "AC")
-                                          childDevice.sendEvent(name: "unitId", value: "${vUnitId}")
-                                      }
-                                      childDevice.refresh()
-                                      
-                                  } 
-                             
-
-                           }
-    }   
-	catch (Exception e) {
-        log.error "createChildACUnits : Unable to query Mitsubishi Electric MELCloud: ${e}"
-	}
-}
-*/
-
 //Authentication
 
 def setAuthCode() {
